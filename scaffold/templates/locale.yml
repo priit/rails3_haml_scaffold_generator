@@ -1,0 +1,32 @@
+# encoding: UTF-8
+en:
+  #
+  # Controller messages
+  #
+  <%= singular_name %>_created_message: "<%= singular_name.capitalize %> was successfully created."
+  <%= singular_name %>_not_created_message: "<%= singular_name.capitalize %> was not created." 
+  <%= singular_name %>_updated_message: "<%= singular_name.capitalize %> was successfully updated."
+  <%= singular_name %>_not_updated_message: "<%= singular_name.capitalize %> was not updated."
+  <%= singular_name %>_destroyed_message: "<%= singular_name.capitalize %> was successfully deleted."
+
+  #
+  # Views
+  #
+  new_<%= singular_name %>_link: "New <%= singular_name.capitalize %>"
+  <%= singular_name %>_link: "<%= singular_name.capitalize %>"
+  <%= plural_name %>_link: "<%= plural_name.capitalize %>"
+  edit_<%= singular_name %>_link: "Edit <%= singular_name.capitalize %>"
+  new_<%= singular_name %>_button: "Submit"
+  <%= singular_name %>_title: "<%= singular_name.capitalize %>"
+  <%= plural_name %>_title: "<%= plural_name.capitalize %>"
+  new_<%= singular_name %>_title: "New <%= singular_name.capitalize %>"
+  edit_<%= singular_name %>_title: "Edit <%= singular_name.capitalize %>"
+  index_<%= plural_name %>_title: "<%= plural_name.capitalize %>"
+  no_<%= plural_name %>_note: "There is no <%= plural_name %>."
+
+  #
+  # Model
+  #
+  <% attributes.each do |attribute| -%>
+<%= singular_name %>_<%= attribute.name %>_attr: "<%= attribute.name.capitalize %>"
+  <% end -%>

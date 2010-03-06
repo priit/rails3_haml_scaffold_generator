@@ -1,0 +1,11 @@
+%table{cellspacing: "0"}
+  %thead
+    %tr
+<% attributes.each do |attribute| -%>
+      %th <%= attribute.human_name %>
+<% end -%>
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - <%= plural_name %>.each do |<%= singular_name %>|
+      = render "<%= plural_name %>/row", :<%= singular_name %> => <%= singular_name %>

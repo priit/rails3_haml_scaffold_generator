@@ -1,0 +1,8 @@
+%tr
+<% attributes.each do |attribute| -%>
+  %td= <%= singular_name %>.<%= attribute.name %>
+<% end -%>
+  %td= link_to t(:show_link), <%= singular_name %>
+  %td= link_to t(:edit_link), edit_<%= singular_name %>_path(<%= singular_name %>)
+  %td= link_to t(:destroy_link), <%= singular_name %>, :confirm => t(:are_you_sure_confirmation), :method => :delete
+
