@@ -1,5 +1,7 @@
 # Rails 3 HAML Scaffold Generator
 
+This fork has added translations and priit's own style for psynix scaffold generator:
+
 Essentially just a copy of the Rails 3 ERB generator with HAML replacements for the templates.
 
 Original idea from [Paul Barry's article on custom genrators][OriginalIdea]
