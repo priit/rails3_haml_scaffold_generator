@@ -3,11 +3,11 @@ en:
   #
   # Controller messages
   #
-  <%= singular_name %>_created_message: "<%= singular_name.capitalize %> was successfully created."
-  <%= singular_name %>_not_created_message: "<%= singular_name.capitalize %> was not created." 
-  <%= singular_name %>_updated_message: "<%= singular_name.capitalize %> was successfully updated."
-  <%= singular_name %>_not_updated_message: "<%= singular_name.capitalize %> was not updated."
-  <%= singular_name %>_destroyed_message: "<%= singular_name.capitalize %> was successfully deleted."
+  <%= singular_name %>_created_notice: "<%= singular_name.capitalize %> was successfully created."
+  <%= singular_name %>_created_alert: "<%= singular_name.capitalize %> was not created." 
+  <%= singular_name %>_updated_notice: "<%= singular_name.capitalize %> was successfully updated."
+  <%= singular_name %>_updated_alert: "<%= singular_name.capitalize %> was not updated."
+  <%= singular_name %>_destroyed_notice: "<%= singular_name.capitalize %> was successfully deleted."
 
   #
   # Views

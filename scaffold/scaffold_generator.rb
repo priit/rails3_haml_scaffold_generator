@@ -54,6 +54,10 @@ module Haml
         template "integration_test.rb", File.join("test/integration", "#{plural_name}_integration_test.rb")
       end
 
+      def copy_controller_file
+        template "controller.rb", File.join("app/controllers/", "#{plural_name}_controller.rb")
+      end
+
       #def copy_layout_file
         #return unless options[:layout]
         #template "layout.html.haml", File.join("app/views/layouts", controller_class_path, "#{controller_file_name}.html.haml")
